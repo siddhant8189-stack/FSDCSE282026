@@ -1,11 +1,21 @@
 const container = document.getElementById("root");
-const root=ReactDom.createRoot(container);
-const h21=<h2>Welcome to jsx</h2>
-const h22=<h1>ABES Engineering college</h1>
-const warpper=<div style={{border:'2px solid red'}}>{h21}{h22}</div>
-const div=
-<div style={{}}>
-    {warpper}
+const root = ReactDOM.createRoot(container);
+
+const h21 = <h2>Welcome to JSX</h2>;
+const h22 = <h1>ABES Engineering College</h1>;
+
+const wrapper = (
+  <div style={{ border: "2px solid red" }}>
+    {h21}
+    {h22}
+  </div>
+);
+
+const div = (
+  <div>
+    {wrapper}
     <h2>hello</h2>
-</div>
-root.render(warpper);
+  </div>
+);
+
+root.render(wrapper);
